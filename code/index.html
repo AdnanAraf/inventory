@@ -7,9 +7,54 @@
   </head>
   <body>
     <div>
-      <div>
-        <div>
-          
+      <div class="lg:ml-56 lg:mr-56 mt-5 ml-5 mr-5">
+        <div class="flex justify-between items-center gap-10">
+          <div class="flex items-center sm:gap-4 gap-2">
+            <img src="/code/image/logo.svg" alt="Ecobazar Logo" />
+            <h1 class="text-gray-900 font-medium sm:text-3xl text-2xl">
+              Ecobazar
+            </h1>
+          </div>
+
+          <!-- Single search bar that's hidden on mobile, shown on desktop -->
+          <div class="sm:flex items-center w-full justify-center hidden">
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full border border-gray-300 max-w-md rounded-tl-lg rounded-bl-lg p-2 outline-none"
+              aria-label="Search products"
+            />
+            <button
+              class="bg-green-700 p-2.5 px-4 font-medium text-white rounded-tr-lg rounded-br-lg"
+              aria-label="Search"
+            >
+              Search
+            </button>
+          </div>
+
+          <div class="flex items-center gap-7">
+            <img src="/code/image/Heart.svg" alt="Wishlist" />
+            <div class="flex items-center gap-2">
+              <img src="/code/image/Bag.svg" alt="Shopping bag" />
+              <h1>Cart</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile search bar - only shown on mobile -->
+        <div class="flex items-center w-full justify-center mt-3 sm:hidden">
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full border border-gray-300 rounded-tl-lg rounded-bl-lg p-2 outline-none"
+            aria-label="Search products"
+          />
+          <button
+            class="bg-green-700 p-2.5 px-4 font-medium text-white rounded-tr-lg rounded-br-lg"
+            aria-label="Search"
+          >
+            Search
+          </button>
         </div>
       </div>
     </div>
