@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div>
@@ -32,13 +33,9 @@
             </button>
           </div>
 
-          <div class="flex items-center gap-7">
-            <img src="/code/image/Heart.svg" alt="Wishlist" />
-            <div class="flex items-center gap-2">
-              <img src="/code/image/Bag.svg" alt="Shopping bag" />
-              <h1>Cart</h1>
-            </div>
-          </div>
+          <img src="/code/image/Heart.svg" alt="Wishlist" />
+
+          <img src="/code/image/Bag.svg" alt="Shopping bag" />
         </div>
 
         <!-- Mobile search bar - only shown on mobile -->
@@ -55,6 +52,40 @@
           >
             Search
           </button>
+        </div>
+      </div>
+
+      <!-- navigation bar -->
+
+      <div class="mt-5 lg:ml-10 lg:mr-10">
+        <input
+          type="checkbox"
+          class="peer hidden"
+          id="menubar"
+          name="menu"
+          cheecked
+        />
+        <div class="bg-gray-800 w-full h-full Items">
+          <nav class="flex justify-between items-center px-4 py-4">
+            <ul class="flex gap-10 text-white menuItem p-5">
+              <a href="#" class="hover:text-green-500 font-medium">Home</a>
+              <a href="#" class="hover:text-green-500 font-medium">Shop</a>
+              <a href="#" class="hover:text-green-500 font-medium">Blog</a>
+              <a href="#" class="hover:text-green-500 font-medium">About Us</a>
+              <a href="#" class="hover:text-green-500 font-medium">Contact</a>
+            </ul>
+
+            <div class="flex items-center gap-2">
+              <img src="/code/image/PhoneCall 1.svg" alt="Phone Call" />
+              <h1 class="text-white font-medium">(219) 555-0114</h1>
+            </div>
+
+            <label for="menubar" class="threeBar sm:hidden block">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </nav>
         </div>
       </div>
     </div>
