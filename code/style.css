@@ -1,5 +1,10 @@
 
+/* right Arrow */
 
+.arrow:hover .icon{
+    display: block;
+
+}
 
 @media screen and (max-width:640px){
 
@@ -47,5 +52,9 @@
     #menubar:checked ~ .Items nav .threeBar span:nth-child(3){
       transform: rotate(-45deg) translate(4px, -4px);
     }
-
+}
+@media screen and (max-width:540px){
+    .benefits{
+       margin-bottom: -100px;
+    }
 }
