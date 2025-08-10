@@ -6,8 +6,18 @@ html {
 
 .arrow:hover .icon{
     display: block;
-
 }
+
+.content {
+  display: none;
+}
+
+#vegetable:checked ~ .contents .vegetables,
+#fruit:checked ~ .contents .fruits {
+  display: block;
+}
+
+
 
 @media screen and (max-width:640px){
 
@@ -63,3 +73,5 @@ html {
         margin-bottom: -100px;
     }
 }
+
+
