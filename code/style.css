@@ -15,6 +15,7 @@ html {
 #vegetable:checked ~ .contents .vegetables,
 #fruit:checked ~ .contents .fruits {
   display: block;
+  transition: all 0.3s ease-in-out;
 }
 
 
