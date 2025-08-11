@@ -7,16 +7,25 @@ html {
 .arrow:hover .icon{
     display: block;
 }
-
+/* Category content */
 .content {
   display: none;
+  padding-left: 20px;
 }
 
 #vegetable:checked ~ .contents .vegetables,
-#fruit:checked ~ .contents .fruits {
+#fruit:checked ~ .contents .fruits ,
+#meat:checked ~ .contents .meat {
   display: block;
-  transition: all 0.3s ease-in-out;
+
 }
+
+  #vegetable:checked ~ .filter-controller label[for="vegetable"],
+  #fruit:checked ~ .filter-controller label[for="fruit"],
+  #meat:checked ~ .filter-controller label[for="meat"] {
+    color: #00B207;
+    font-weight: bold;
+  }
 
 
 

@@ -364,16 +364,21 @@
           </h1>
         </div>
         <input type="radio" name="category" id="vegetable" checked class="hidden" />
-        <input type="radio" name="category" id="fruit" class="hidden" />
-        <!-- <input type="checkbox" name="category" id="meat" class="hidden" />
-        <input type="checkbox" name="category" id="chocolate" class="hidden" /> -->
+        <input type="radio" name="category" id="fruit"  class="hidden" />
+        <input type="radio" name="category" id="meat" class="hidden" />
+    
 
-        <div class="filter-controller  flex justify-center gap-4 mt-5">
-        <label class="cursor-pointer" for="vegetable">Vegetable</label>
-        <label class="cursor-pointer" for="fruit">Fruits</label>
+        <!-- Filter Controller -->
+
+        <div class="filter-controller  flex justify-center gap-4 mt-5 border-[1px] border-gray-300 rounded-lg  w-max m-auto">
+        <label class="cursor-pointer hover:text-[#00B207] font-medium text-gray-400 border-r-[1px] border-gray-300 p-3" for="vegetable">Vegetable</label>
+        <label class="cursor-pointer hover:text-[#00B207] font-medium text-gray-400 p-3 border-r-[1px] border-gray-300" for="fruit">Fruits</label>
+         <label class="cursor-pointer hover:text-[#00B207] font-medium text-gray-400 p-3" for="meat">Meats</label>
       </div>
-        <!-- Vegetable -->
- <!-- Vegetable-1 -->
+
+      
+        <!-- Vegetable Items -->
+
 <div class="contents ">
   <div class="content vegetables">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-20">
@@ -407,7 +412,7 @@
       >
         <img src="/code/image/vegetable/vegetable-2.svg" alt="/" />
         <div
-          class="flex items-center justify-between px-2 pb-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out"
+          class="flex items-center justify-between px-2 pb-2  transition-all duration-300 ease-in-out"
         >
           <div class="flex flex-col gap-2 px-2 pb-2">
             <h1 class="text-[#7A997C]">Eggplant</h1>
@@ -428,7 +433,7 @@
       >
         <img src="/code/image/vegetable/vegetable-3.svg" alt="/" />
         <div
-          class="flex items-center justify-between px-2 pb-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out"
+          class="flex items-center justify-between px-2 pb-2  transition-all duration-300 ease-in-out"
         >
           <div class="flex flex-col gap-2 px-2 pb-2">
             <h1 class="text-[#7A997C]">Corn</h1>
@@ -580,6 +585,75 @@
       </div>
 
     </div>
+  </div>
+
+<!-- Fruits Category -->
+  <div  class="content fruits">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-20">
+
+      <!-- 1st Part -->
+    <div
+        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
+      >
+        <img class="h-60 w-62" src="/code/image/fruits/fruits.svg" alt="/" />
+        <div class="flex items-center justify-between px-2 pb-2">
+          <div class="flex flex-col gap-2 px-2 pb-2">
+            <h1 class="text-[#7A997C]">Surjapur Mango</h1>
+            <p class="text-[#002603] font-semibold">$34.00</p>
+          </div>
+
+          <div
+            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
+          >
+            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+          </div>
+        </div>
+      </div>
+      <!-- 2nd Part -->
+
+    <div
+        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
+      >
+        <img class="h-60 w-62" src="/code/image/fruits/fruits-2.svg" alt="/" />
+        <div class="flex items-center justify-between px-2 pb-2">
+          <div class="flex flex-col gap-2 px-2 pb-2">
+            <h1 class="text-[#7A997C]">Green Apple</h1>
+            <p class="text-[#002603] font-semibold">$24.00</p>
+          </div>
+
+          <div
+            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
+          >
+            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+          </div>
+        </div>
+      </div>
+      <!-- 3rd Part -->
+
+  <div
+        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
+      >
+        <img class="h-60 w-62" src="/code/image/fruits/fruits-3.svg" alt="/" />
+        <div class="flex items-center justify-between px-2 pb-2">
+          <div class="flex flex-col gap-2 px-2 pb-2">
+            <h1 class="text-[#7A997C]">Indian Malta</h1>
+            <p class="text-[#002603] font-semibold">$24.00</p>
+          </div>
+
+          <div
+            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
+          >
+            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Meats Item -->
+
+  <div class="content meat  mt-20">
+    <h1 class="text-center">No Items Found</h1>
   </div>
 </div>
 
