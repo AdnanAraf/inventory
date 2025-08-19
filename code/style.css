@@ -48,6 +48,15 @@ html {
   box-shadow: 0 20px 40px rgba(50, 205, 50, 0.2);
 }
 
+/* Slider Controls */
+
+.slider-controls label {
+  height: 10px;
+  width: 10px;
+  background-color: #00b207;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 640px) {
   .threeBar span {
     height: 3px;
@@ -100,5 +109,19 @@ html {
 @media screen and (min-width: 768px) and (max-width: 790px) {
   .benefits {
     margin-bottom: -100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slides {
+    display: none;
+  }
+
+  #products-1:checked ~ div .slider-1,
+  #products-2:checked ~ div .slider-2,
+  #products-3:checked ~ div .slider-3,
+  #products-4:checked ~ div .slider-4,
+  #products-5:checked ~ div .slider-5 {
+    display: block;
   }
 }
