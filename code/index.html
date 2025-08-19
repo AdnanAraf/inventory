@@ -7,345 +7,275 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <div class="lg:ml-56 lg:mr-56 mt-5 ml-5 mr-5">
-        <div class="flex justify-between items-center gap-10">
-          <div class="flex items-center sm:gap-4 gap-2">
-            <img src="/code/image/navigation/logo.svg" alt="Ecobazar Logo" />
-            <h1 class="text-gray-900 font-medium sm:text-3xl text-2xl">
-              Ecobazar
-            </h1>
-          </div>
-
-          <!-- Single search bar that's hidden on mobile, shown on desktop -->
-          <div class="sm:flex items-center w-full justify-center hidden">
-            <input
-              type="text"
-              placeholder="Search"
-              class="w-full border border-gray-300 max-w-md rounded-tl-lg rounded-bl-lg p-2 outline-none"
-              aria-label="Search products"
-            />
-            <button
-              class="bg-green-700 p-2.5 px-4 font-medium text-white rounded-tr-lg rounded-br-lg"
-              aria-label="Search"
-            >
-              Search
-            </button>
-          </div>
-
-          <div class="flex items-center gap-4 pr-10">
-            <img
-              class="sm:block hidden"
-              src="/code/image/navigation/Heart.svg"
-              alt="Wishlist"
-            />
-            <img
-              class="sm:block hidden"
-              src="/code/image/navigation/Bag.svg"
-              alt="Shopping bag"
-            />
-          </div>
+    <div class="ml-5 mr-5 mt-5 lg:ml-56 lg:mr-56">
+      <div class="flex items-center justify-between gap-10">
+        <div class="flex items-center gap-2 sm:gap-4">
+          <img src="/code/image/navigation/logo.svg" alt="Ecobazar Logo" />
+          <h1 class="text-2xl font-medium text-gray-900 sm:text-3xl">Ecobazar</h1>
         </div>
 
-        <!-- Mobile search bar - only shown on mobile -->
-        <div class="flex items-center w-full justify-center mt-3 sm:hidden">
+        <!-- Single search bar that's hidden on mobile, shown on desktop -->
+        <div class="hidden w-full items-center justify-center sm:flex">
           <input
             type="text"
             placeholder="Search"
-            class="w-full border border-gray-300 rounded-tl-lg rounded-bl-lg p-2 outline-none"
+            class="w-full max-w-md rounded-bl-lg rounded-tl-lg border border-gray-300 p-2 outline-none"
             aria-label="Search products"
           />
           <button
-            class="bg-green-700 p-2.5 px-4 font-medium text-white rounded-tr-lg rounded-br-lg"
+            class="rounded-br-lg rounded-tr-lg bg-green-700 p-2.5 px-4 font-medium text-white"
             aria-label="Search"
           >
             Search
           </button>
         </div>
-      </div>
 
-      <!-- navigation bar -->
-
-      <div class="mt-5 lg:ml-10 lg:mr-10">
-        <input
-          type="checkbox"
-          class="peer hidden"
-          id="menubar"
-          name="menu"
-          cheecked
-        />
-        <div class="bg-gray-800 w-full h-full Items sm:py-0 py-3">
-          <nav class="flex justify-between items-center px-4">
-            <ul class="flex gap-10 sm:text-white menuItem p-5 lg:px-52">
-              <a href="#" class="hover:text-green-500 font-medium">Home</a>
-              <a href="#" class="hover:text-green-500 font-medium">Shop</a>
-              <a href="#" class="hover:text-green-500 font-medium">Blog</a>
-              <a href="#about" class="hover:text-green-500 font-medium"
-                >About Us</a
-              >
-              <a href="#" class="hover:text-green-500 font-medium">Contact</a>
-              <img
-                class="sm:hidden block w-max border-white"
-                src="/code/image/navigation/Heart.svg"
-                alt="Wishlist"
-              />
-              <img
-                class="sm:hidden block w-max"
-                src="/code/image/navigation/Bag.svg"
-                alt="Shopping bag"
-              />
-            </ul>
-
-            <div class="flex items-center gap-2">
-              <img
-                src="/code/image/navigation/PhoneCall 1.svg"
-                alt="Phone Call"
-              />
-              <h1 class="text-white font-medium">(219) 555-0114</h1>
-            </div>
-
-            <label for="menubar" class="threeBar sm:hidden block">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          </nav>
+        <div class="flex items-center gap-4 pr-10">
+          <img class="hidden sm:block" src="/code/image/navigation/Heart.svg" alt="Wishlist" />
+          <img class="hidden sm:block" src="/code/image/navigation/Bag.svg" alt="Shopping bag" />
         </div>
       </div>
 
-      <!-- Hero Section -->
-
-      <div class="bg-[#EDF2EE] xl:ml-56 xl:mr-56 mt-5 relative pb-36">
-        <div
-          class="flex xl:flex-row flex-col-reverse justify-between sm:items-center"
+      <!-- Mobile search bar - only shown on mobile -->
+      <div class="mt-3 flex w-full items-center justify-center sm:hidden">
+        <input
+          type="text"
+          placeholder="Search"
+          class="w-full rounded-bl-lg rounded-tl-lg border border-gray-300 p-2 outline-none"
+          aria-label="Search products"
+        />
+        <button
+          class="rounded-br-lg rounded-tr-lg bg-green-700 p-2.5 px-4 font-medium text-white"
+          aria-label="Search"
         >
-          <div class="px-10 flex flex-col gap-4 py-4">
-            <p class="text-[#00B207] font-medium">Welcome to shopery</p>
-            <h1 class="text-gray-900 font-bold sm:text-6xl text-3xl">
-              Fresh & Healthy Organic Food
-            </h1>
-            <p class="sm:text-2xl text-xl">
-              Sale up to
-              <span class="text-[#FF8A00] font-semibold">30% OFF</span>
-            </p>
-            <p class="-mt-3 text-[#808080]">
-              Free shipping on all your order. we deliver, you enjoy
-            </p>
+          Search
+        </button>
+      </div>
+    </div>
 
-            <button
-              class="arrow text-white cursor-pointer bg-[#00B207] w-max flex items-center rounded-full p-2.5 px-7 gap-2 cursor-pointer"
-            >
-              Shop Now
-              <img
-                class="icon hidden"
-                src="/code/image/hero/right-arrow.svg"
-                alt="Right Arrow"
-              />
-            </button>
+    <!-- navigation bar -->
+
+    <div class="mt-5 lg:ml-10 lg:mr-10">
+      <input type="checkbox" class="peer hidden" id="menubar" name="menu" cheecked />
+      <div class="Items h-full w-full bg-gray-800 py-3 sm:py-0">
+        <nav class="flex items-center justify-between px-4">
+          <ul class="menuItem flex gap-10 p-5 sm:text-white lg:px-52">
+            <a href="#" class="font-medium hover:text-green-500">Home</a>
+            <a href="#" class="font-medium hover:text-green-500">Shop</a>
+            <a href="#" class="font-medium hover:text-green-500">Blog</a>
+            <a href="#about" class="font-medium hover:text-green-500">About Us</a>
+            <a href="#" class="font-medium hover:text-green-500">Contact</a>
+            <img
+              class="block w-max border-white sm:hidden"
+              src="/code/image/navigation/Heart.svg"
+              alt="Wishlist"
+            />
+            <img
+              class="block w-max sm:hidden"
+              src="/code/image/navigation/Bag.svg"
+              alt="Shopping bag"
+            />
+          </ul>
+
+          <div class="flex items-center gap-2">
+            <img src="/code/image/navigation/PhoneCall 1.svg" alt="Phone Call" />
+            <h1 class="font-medium text-white">(219) 555-0114</h1>
+          </div>
+
+          <label for="menubar" class="threeBar block sm:hidden">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+
+    <div class="relative mt-5 bg-[#EDF2EE] pb-36 xl:ml-56 xl:mr-56">
+      <div class="flex flex-col-reverse justify-between sm:items-center xl:flex-row">
+        <div class="flex flex-col gap-4 px-10 py-4">
+          <p class="font-medium text-[#00B207]">Welcome to shopery</p>
+          <h1 class="text-3xl font-bold text-gray-900 sm:text-6xl">Fresh & Healthy Organic Food</h1>
+          <p class="text-xl sm:text-2xl">
+            Sale up to
+            <span class="font-semibold text-[#FF8A00]">30% OFF</span>
+          </p>
+          <p class="-mt-3 text-[#808080]">Free shipping on all your order. we deliver, you enjoy</p>
+
+          <button
+            class="arrow flex w-max cursor-pointer items-center gap-2 rounded-full bg-[#00B207] p-2.5 px-7 text-white"
+          >
+            Shop Now
+            <img class="icon hidden" src="/code/image/hero/right-arrow.svg" alt="Right Arrow" />
+          </button>
+        </div>
+
+        <div>
+          <img src="/code/image/hero/Image (5).svg" alt="Hero Image" />
+        </div>
+      </div>
+      <!-- Our Benefits Section -->
+      <div
+        class="benefits absolute -bottom-56 left-0 right-0 z-10 rounded-lg bg-white shadow-2xl sm:mx-10 md:-bottom-12"
+      >
+        <div class="flex flex-wrap items-center justify-between">
+          <!-- Free Shipping   -->
+          <div
+            class="flex cursor-pointer items-center gap-4 p-5 px-10 pt-4 transition-all duration-300 ease-in-out hover:bg-[#00B207] hover:text-white"
+          >
+            <img
+              class="rounded-full border-[1px] border-gray-200 bg-white p-2 opacity-80"
+              src="/code/image/hero/delivery-truck 1.svg"
+              alt="Delivery Truck"
+            />
+            <div class="flex flex-col">
+              <h1 class="font-semibold text-gray-900">Free Shipping</h1>
+              <p>Free shipping on all your order</p>
+            </div>
+          </div>
+          <!-- Customer Support  -->
+          <div
+            class="flex cursor-pointer items-center gap-4 p-5 px-10 pt-4 transition-all duration-300 ease-in-out hover:bg-[#00B207] hover:text-white"
+          >
+            <img
+              class="rounded-full border-[1px] border-gray-200 bg-white p-2 opacity-80"
+              src="/code/image/hero/headphones 1.svg"
+              alt="Delivery Truck"
+            />
+            <div class="flex flex-col">
+              <h1 class="font-semibold text-gray-900">Customer Support 24/7</h1>
+              <p>Instant access to Support</p>
+            </div>
+          </div>
+          <!-- Payment -->
+          <div
+            class="flex cursor-pointer items-center gap-4 p-5 px-10 pt-4 transition-all duration-300 ease-in-out hover:bg-[#00B207] hover:text-white"
+          >
+            <img
+              class="h-12 w-12 overflow-hidden rounded-full border-[1px] border-gray-200 bg-white p-2 opacity-80"
+              src="/code/image/hero/payment.svg"
+              alt="payment"
+              alt="Delivery Truck"
+            />
+            <div class="flex flex-col">
+              <h1 class="font-semibold text-gray-900">Customer Support 24/7</h1>
+              <p>Instant access to Support</p>
+            </div>
+          </div>
+          <!-- Money Back  -->
+          <div
+            class="flex cursor-pointer items-center gap-4 p-5 px-10 pt-4 transition-all duration-300 ease-in-out hover:bg-[#00B207] hover:text-white"
+          >
+            <img
+              class="rounded-full border-[1px] border-gray-200 bg-white p-2 opacity-80"
+              src="/code/image/hero/money-back.svg"
+              alt="payment"
+              alt="Delivery Truck"
+            />
+            <div class="flex flex-col">
+              <h1 class="font-semibold text-gray-900">Customer Support 24/7</h1>
+              <p>Instant access to Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+
+    <div class="mt-60 lg:mt-48" id="about">
+      <div class="mt-10 flex flex-col gap-10 lg:px-48">
+        <!-- 1st  About-->
+        <div class="flex flex-col-reverse justify-between 2xl:flex-row 2xl:items-center">
+          <div class="mt-3 flex w-full flex-col gap-4 px-4 lg:mt-0 lg:px-0 2xl:max-w-lg">
+            <h1 class="text-2xl font-bold sm:text-3xl lg:text-5xl">
+              100% Trusted Organic Food Store
+            </h1>
+            <p class="text-base text-gray-600">
+              100% organic food is grown and produced without the use of synthetic pesticides,
+              chemical fertilizers, genetically modified organisms (GMOs), or artificial additives.
+              It is cultivated using natural farming methods that protect soil health, preserve
+              biodiversity, and maintain a healthy ecosystem. Choosing organic food ensures that you
+              are consuming pure, chemical-free products that are rich in nutrients and better for
+              your overall health. It also supports sustainable farming practices that are kind to
+              both people and the planet.
+            </p>
           </div>
 
           <div>
-            <img src="/code/image/hero/Image (5).svg" alt="Hero Image" />
+            <img class="w-full" src="/code/image/About/image-1.svg" alt="About Us Image" />
           </div>
         </div>
-        <!-- Our Benefits Section -->
-        <div
-          class="benefits bg-white absolute md:-bottom-12 -bottom-56 left-0 right-0 sm:mx-10 rounded-lg shadow-2xl z-10"
-        >
-          <div class="flex justify-between items-center flex-wrap">
-            <!-- Free Shipping   -->
-            <div
-              class="flex items-center gap-4 pt-4 hover:bg-[#00B207] cursor-pointer transition-all duration-300 ease-in-out p-5 px-10 hover:text-white"
-            >
-              <img
-                class="border-gray-200 rounded-full border-[1px] p-2 opacity-80 bg-white"
-                src="/code/image/hero/delivery-truck 1.svg"
-                alt="Delivery Truck"
-              />
-              <div class="flex flex-col">
-                <h1 class="text-gray-900 font-semibold">Free Shipping</h1>
-                <p>Free shipping on all your order</p>
-              </div>
-            </div>
-            <!-- Customer Support  -->
-            <div
-              class="flex items-center gap-4 pt-4 p-5 px-10 hover:bg-[#00B207] cursor-pointer transition-all duration-300 ease-in-out hover:text-white"
-            >
-              <img
-                class="border-gray-200 rounded-full border-[1px] p-2 opacity-80 bg-white"
-                src="/code/image/hero/headphones 1.svg"
-                alt="Delivery Truck"
-              />
-              <div class="flex flex-col">
-                <h1 class="text-gray-900 font-semibold">
-                  Customer Support 24/7
-                </h1>
-                <p>Instant access to Support</p>
-              </div>
-            </div>
-            <!-- Payment -->
-            <div
-              class="flex items-center gap-4 pt-4 p-5 px-10 hover:bg-[#00B207] cursor-pointer transition-all duration-300 ease-in-out hover:text-white"
-            >
-              <img
-                class="border-gray-200 rounded-full border-[1px] p-2 h-12 w-12 overflow-hidden opacity-80 bg-white"
-                src="/code/image/hero/payment.svg"
-                alt="payment"
-                alt="Delivery Truck"
-              />
-              <div class="flex flex-col">
-                <h1 class="text-gray-900 font-semibold">
-                  Customer Support 24/7
-                </h1>
-                <p>Instant access to Support</p>
-              </div>
-            </div>
-            <!-- Money Back  -->
-            <div
-              class="flex items-center gap-4 pt-4 p-5 px-10 hover:bg-[#00B207] cursor-pointer transition-all duration-300 ease-in-out hover:text-white"
-            >
-              <img
-                class="border-gray-200 rounded-full border-[1px] p-2 opacity-80 bg-white"
-                src="/code/image/hero/money-back.svg"
-                alt="payment"
-                alt="Delivery Truck"
-              />
-              <div class="flex flex-col">
-                <h1 class="text-gray-900 font-semibold">
-                  Customer Support 24/7
-                </h1>
-                <p>Instant access to Support</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- About Us -->
+        <!-- 2nd About -->
 
-      <div class="lg:mt-48 mt-60" id="about">
-        <div class="lg:px-48 mt-10 flex flex-col gap-10">
-          <!-- 1st  About-->
-          <div
-            class="flex 2xl:items-center justify-between 2xl:flex-row flex-col-reverse"
-          >
-            <div
-              class="w-full 2xl:max-w-lg flex flex-col gap-4 lg:px-0 px-4 lg:mt-0 mt-3"
-            >
-              <h1 class="font-bold lg:text-5xl sm:text-3xl text-2xl">
-                100% Trusted Organic Food Store
-              </h1>
-              <p class="text-gray-600 text-base">
-                100% organic food is grown and produced without the use of
-                synthetic pesticides, chemical fertilizers, genetically modified
-                organisms (GMOs), or artificial additives. It is cultivated
-                using natural farming methods that protect soil health, preserve
-                biodiversity, and maintain a healthy ecosystem. Choosing organic
-                food ensures that you are consuming pure, chemical-free products
-                that are rich in nutrients and better for your overall health.
-                It also supports sustainable farming practices that are kind to
-                both people and the planet.
-              </p>
-            </div>
-
-            <div>
-              <img
-                class="w-full"
-                src="/code/image/About/image-1.svg"
-                alt="About Us Image"
-              />
-            </div>
+        <div class="mt-3 flex flex-col justify-between lg:mt-0 2xl:flex-row 2xl:items-center">
+          <div>
+            <img src="/code/image/About/background-image.svg" alt="Background Image" />
           </div>
 
-          <!-- 2nd About -->
-
-          <div
-            class="flex 2xl:items-center justify-between 2xl:flex-row flex-col lg:mt-0 mt-3"
-          >
-            <div>
-              <img
-                src="/code/image/About/background-image.svg"
-                alt="Background Image"
-              />
-            </div>
-
-            <div class="flex flex-col gap-4 px-4 lg:px-0 lg:mt-0 mt-10">
-              <h1 class="font-bold lg:text-5xl sm:text-3xl text-2xl">
-                100% Trusted Organic Food Store
-              </h1>
-              <p class="text-gray-500 text-base w-full max-w-md">
-                Pellentesque a ante vulputate leo porttitor luctus sed eget
-                eros. Nulla et rhoncus neque. Duis non diam eget est luctus
-                tincidunt a a mi. Nulla eu eros consequat tortor tincidunt
-                feugiat.
-              </p>
-              <div class="flex justify-between flex-wrap">
-                <div class="flex flex-col gap-5">
-                  <div class="flex items-center gap-4">
-                    <img src="/code/image/About/leaf.svg" alt="Leaf Image" />
-                    <div>
-                      <h1 class="text-gray-900 font-semibold text-base">
-                        100% Organic food
-                      </h1>
-                      <p class="text-gray-400">100% healthy & Fresh food.</p>
-                      <p></p>
-                    </div>
-                  </div>
-                  <!-- Customer feedback -->
-                  <div class="flex items-center gap-4">
-                    <img src="/code/image/About/feed.svg" alt="Feed Image" />
-                    <div>
-                      <h1 class="text-gray-900 font-semibold text-base">
-                        Customer Feedback
-                      </h1>
-                      <p class="text-gray-400">Our happy customer</p>
-                    </div>
-                  </div>
-                  <!-- Free Shipping -->
-                  <div class="flex items-center gap-4">
-                    <img
-                      src="/code/image/About/shipping.svg"
-                      alt="Plant Image"
-                    />
-                    <div>
-                      <h1 class="text-gray-900 font-semibold text-base">
-                        Free Shipping
-                      </h1>
-                      <p class="text-gray-400">Free shipping with discount</p>
-                    </div>
+          <div class="mt-10 flex flex-col gap-4 px-4 lg:mt-0 lg:px-0">
+            <h1 class="text-2xl font-bold sm:text-3xl lg:text-5xl">
+              100% Trusted Organic Food Store
+            </h1>
+            <p class="w-full max-w-md text-base text-gray-500">
+              Pellentesque a ante vulputate leo porttitor luctus sed eget eros. Nulla et rhoncus
+              neque. Duis non diam eget est luctus tincidunt a a mi. Nulla eu eros consequat tortor
+              tincidunt feugiat.
+            </p>
+            <div class="flex flex-wrap justify-between">
+              <div class="flex flex-col gap-5">
+                <div class="flex items-center gap-4">
+                  <img src="/code/image/About/leaf.svg" alt="Leaf Image" />
+                  <div>
+                    <h1 class="text-base font-semibold text-gray-900">100% Organic food</h1>
+                    <p class="text-gray-400">100% healthy & Fresh food.</p>
+                    <p></p>
                   </div>
                 </div>
+                <!-- Customer feedback -->
+                <div class="flex items-center gap-4">
+                  <img src="/code/image/About/feed.svg" alt="Feed Image" />
+                  <div>
+                    <h1 class="text-base font-semibold text-gray-900">Customer Feedback</h1>
+                    <p class="text-gray-400">Our happy customer</p>
+                  </div>
+                </div>
+                <!-- Free Shipping -->
+                <div class="flex items-center gap-4">
+                  <img src="/code/image/About/shipping.svg" alt="Plant Image" />
+                  <div>
+                    <h1 class="text-base font-semibold text-gray-900">Free Shipping</h1>
+                    <p class="text-gray-400">Free shipping with discount</p>
+                  </div>
+                </div>
+              </div>
 
-                <div class="flex flex-col gap-5">
-                  <!-- Support -->
-                  <div class="flex items-center gap-4 mt-5 sm:mt-0">
-                    <img src="/code/image/About/support.svg" alt="/" />
-                    <div>
-                      <h1 class="text-gray-900 font-semibold text-base">
-                        Great Support 24/7
-                      </h1>
-                      <p class="text-gray-400">Instant access to Contact</p>
-                    </div>
+              <div class="flex flex-col gap-5">
+                <!-- Support -->
+                <div class="mt-5 flex items-center gap-4 sm:mt-0">
+                  <img src="/code/image/About/support.svg" alt="/" />
+                  <div>
+                    <h1 class="text-base font-semibold text-gray-900">Great Support 24/7</h1>
+                    <p class="text-gray-400">Instant access to Contact</p>
                   </div>
-                  <!-- Payment -->
-                  <div class="flex items-center gap-4">
-                    <img src="/code/image/About/payment.svg" alt="/" />
-                    <div>
-                      <h1 class="text-gray-900 font-semibold text-base">
-                        100% Sucure Payment
-                      </h1>
-                      <p class="text-gray-400">We ensure your money is save</p>
-                    </div>
+                </div>
+                <!-- Payment -->
+                <div class="flex items-center gap-4">
+                  <img src="/code/image/About/payment.svg" alt="/" />
+                  <div>
+                    <h1 class="text-base font-semibold text-gray-900">100% Sucure Payment</h1>
+                    <p class="text-gray-400">We ensure your money is save</p>
                   </div>
-                  <!-- organic Food -->
-                  <div class="flex items-center gap-4">
-                    <img src="/code/image/About/organic.svg" alt="/" />
-                    <div>
-                      <h1 class="text-gray-900 font-semibold text-base">
-                        100% Organic Food
-                      </h1>
-                      <p class="text-gray-400">100% healthy & Fresh food.</p>
-                    </div>
+                </div>
+                <!-- organic Food -->
+                <div class="flex items-center gap-4">
+                  <img src="/code/image/About/organic.svg" alt="/" />
+                  <div>
+                    <h1 class="text-base font-semibold text-gray-900">100% Organic Food</h1>
+                    <p class="text-gray-400">100% healthy & Fresh food.</p>
                   </div>
                 </div>
               </div>
@@ -353,432 +283,563 @@
           </div>
         </div>
       </div>
-
-      <!-- Shop By Categories -->
-
-      <div class="mt-10 bg-gray-50 lg:mx-48 lg:mr-48 pb-20">
-        <div class="flex flex-col gap-2">
-          <p class="text-[#00B207] font-medium text-center text-xl">Category</p>
-          <h1 class="text-3xl font-semibold text-center">
-            Shop by Top Categories
-          </h1>
-        </div>
-        <input type="radio" name="category" id="vegetable" checked class="hidden" />
-        <input type="radio" name="category" id="fruit"  class="hidden" />
-        <input type="radio" name="category" id="meat" class="hidden" />
-    
-
-        <!-- Filter Controller -->
-
-        <div class="filter-controller  flex justify-center gap-4 mt-5 border-[1px] border-gray-300 rounded-lg  w-max m-auto">
-        <label class="cursor-pointer hover:text-[#00B207] font-medium text-gray-400 border-r-[1px] border-gray-300 p-3" for="vegetable">Vegetable</label>
-        <label class="cursor-pointer hover:text-[#00B207] font-medium text-gray-400 p-3 border-r-[1px] border-gray-300" for="fruit">Fruits</label>
-         <label class="cursor-pointer hover:text-[#00B207] font-medium text-gray-400 p-3" for="meat">Meats</label>
-      </div>
-
-
-        <!-- Vegetable Items -->
-
-<div class="contents ">
-  <div class="content vegetables">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-20">
-
-      <!-- Vegetable-1 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg"
-      >
-        <img
-          class="m-auto"
-          src="/code/image/vegetable/vegetable-1.svg"
-          alt="/"
-        />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Fresh Cauliflower</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-2 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img src="/code/image/vegetable/vegetable-2.svg" alt="/" />
-        <div
-          class="flex items-center justify-between px-2 pb-2  transition-all duration-300 ease-in-out"
-        >
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Eggplant</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-3 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img src="/code/image/vegetable/vegetable-3.svg" alt="/" />
-        <div
-          class="flex items-center justify-between px-2 pb-2  transition-all duration-300 ease-in-out"
-        >
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Corn</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-4 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg"
-      >
-        <img
-          class="m-auto"
-          src="/code/image/vegetable/vegetable-1.svg"
-          alt="/"
-        />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Fresh Cauliflower</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-5 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/vegetable/vegetable-5.svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Cauliflower</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-6 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/vegetable/vegetable (6).svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Eggplant</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-7 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/vegetable/vegetable (7).svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Green Chilli</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-8 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/vegetable/vegetable (8).svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Chanise Cabbage</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-9 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/vegetable/vegetable (9).svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Ladies Finger</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Vegetable-10 -->
-      <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/vegetable/vegetable (10).svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Potato</h1>
-            <p class="text-[#002603] font-semibold">$14.99</p>
-          </div>
-
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
 
-<!-- Fruits Category -->
-  <div  class="content fruits">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mt-20">
+    <!-- Shop By Categories -->
 
-      <!-- 1st Part -->
-    <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
+    <div class="mt-10 bg-gray-50 pb-20 lg:mx-48 lg:mr-48">
+      <div class="flex flex-col gap-2">
+        <p class="text-center text-xl font-medium text-[#00B207]">Category</p>
+        <h1 class="text-center text-3xl font-semibold">Shop by Top Categories</h1>
+      </div>
+      <input type="radio" name="category" id="vegetable" checked class="hidden" />
+      <input type="radio" name="category" id="fruit" class="hidden" />
+      <input type="radio" name="category" id="meat" class="hidden" />
+
+      <!-- Filter Controller -->
+
+      <div
+        class="filter-controller m-auto mt-5 flex w-max justify-center gap-4 rounded-lg border-[1px] border-gray-300"
       >
-        <img class="h-60 w-62" src="/code/image/fruits/fruits.svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Surjapur Mango</h1>
-            <p class="text-[#002603] font-semibold">$34.00</p>
-          </div>
+        <label
+          class="cursor-pointer border-r-[1px] border-gray-300 p-3 font-medium text-gray-400 hover:text-[#00B207]"
+          for="vegetable"
+          >Vegetable</label
+        >
+        <label
+          class="cursor-pointer border-r-[1px] border-gray-300 p-3 font-medium text-gray-400 hover:text-[#00B207]"
+          for="fruit"
+          >Fruits</label
+        >
+        <label class="cursor-pointer p-3 font-medium text-gray-400 hover:text-[#00B207]" for="meat"
+          >Meats</label
+        >
+      </div>
 
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+      <!-- Vegetable Items -->
+
+      <div class="contents">
+        <div class="content vegetables">
+          <div class="mt-20 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5">
+            <!-- Vegetable-1 -->
+            <div
+              class="group w-max cursor-pointer rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="m-auto" src="/code/image/vegetable/vegetable-1.svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Fresh Cauliflower</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-2 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img src="/code/image/vegetable/vegetable-2.svg" alt="/" />
+              <div
+                class="flex items-center justify-between px-2 pb-2 transition-all duration-300 ease-in-out"
+              >
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Eggplant</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-3 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img src="/code/image/vegetable/vegetable-3.svg" alt="/" />
+              <div
+                class="flex items-center justify-between px-2 pb-2 transition-all duration-300 ease-in-out"
+              >
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Corn</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-4 -->
+            <div
+              class="group w-max cursor-pointer rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="m-auto" src="/code/image/vegetable/vegetable-1.svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Fresh Cauliflower</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-5 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/vegetable/vegetable-5.svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Cauliflower</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-6 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/vegetable/vegetable (6).svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Eggplant</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-7 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/vegetable/vegetable (7).svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Green Chilli</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-8 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/vegetable/vegetable (8).svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Chanise Cabbage</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-9 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/vegetable/vegetable (9).svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Ladies Finger</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Vegetable-10 -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/vegetable/vegetable (10).svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Potato</h1>
+                  <p class="font-semibold text-[#002603]">$14.99</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- 2nd Part -->
 
-    <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/fruits/fruits-2.svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Green Apple</h1>
-            <p class="text-[#002603] font-semibold">$24.00</p>
-          </div>
+        <!-- Fruits Category -->
+        <div class="content fruits">
+          <div class="mt-20 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5">
+            <!-- 1st Part -->
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/fruits/fruits.svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Surjapur Mango</h1>
+                  <p class="font-semibold text-[#002603]">$34.00</p>
+                </div>
 
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+            <!-- 2nd Part -->
+
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/fruits/fruits-2.svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Green Apple</h1>
+                  <p class="font-semibold text-[#002603]">$24.00</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
+            <!-- 3rd Part -->
+
+            <div
+              class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+            >
+              <img class="w-62 h-60" src="/code/image/fruits/fruits-3.svg" alt="/" />
+              <div class="flex items-center justify-between px-2 pb-2">
+                <div class="flex flex-col gap-2 px-2 pb-2">
+                  <h1 class="text-[#7A997C]">Indian Malta</h1>
+                  <p class="font-semibold text-[#002603]">$24.00</p>
+                </div>
+
+                <div
+                  class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+                >
+                  <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- 3rd Part -->
 
-  <div
-        class="group bg-white w-max cursor-pointer hover:border-[1px] border-[#00B207] shadow-lg transition-all duration-300 ease-in-out rounded-lg overflow-hidden"
-      >
-        <img class="h-60 w-62" src="/code/image/fruits/fruits-3.svg" alt="/" />
-        <div class="flex items-center justify-between px-2 pb-2">
-          <div class="flex flex-col gap-2 px-2 pb-2">
-            <h1 class="text-[#7A997C]">Indian Malta</h1>
-            <p class="text-[#002603] font-semibold">$24.00</p>
-          </div>
+        <!-- Meats Item -->
 
-          <div
-            class="w-10 h-10 bg-gray-300 rounded-full cursor-pointer p-2 group-hover:bg-[#00B207] transition-all duration-300 ease-in-out flex items-center justify-center"
-          >
-            <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-          </div>
+        <div class="content meat mt-20">
+          <h1 class="text-center">No Items Found</h1>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Meats Item -->
-
-  <div class="content meat  mt-20">
-    <h1 class="text-center">No Items Found</h1>
-  </div>
-</div>
-</div>
 
     <!-- Fresh & Delicious -->
 
-    <div class="mt-20  lg:mx-48 lg:mr-48 pb-20">
+    <div class="mt-20 pb-20 lg:mx-48 lg:mr-48">
       <!-- 1st fresh and delicious image -->
-<div class="flex justify-center  gap-10 flex-wrap">
+      <div class="flex flex-wrap justify-center gap-10">
         <div class="relative">
-      <img  src="/code/image/fresh-desert/fresh_milk.svg" alt="Fresh Milk" />
+          <img src="/code/image/fresh-desert/fresh_milk.svg" alt="Fresh Milk" />
 
-      <div class="absolute top-14 flex flex-col gap-1 px-5  ">
-        <h1 class="text-white font-medium text-2xl w-full max-w-32">100% Fresh Cow Milk</h1>
-        <p class="text-white ">Starting at <span class="font-semibold text-lg">$14.99</span></p>
-        <button class="text-[#00B207] font-semibold bg-white py-1.5 mt-1 rounded-full flex items-center gap-2  justify-center cursor-pointer">Show Now <span> <img src="/code/image/fresh-desert/right-arrow.svg" alt="Right Arrow"/></span></button>
-      </div>
-      </div>
-      <!-- 2nd fresh and delicious image -->
-      <div class="relative">
-      <img src="/code/image/fresh-desert/cold_drinks.svg" alt="Fresh Milk" />
-      <div class="absolute top-14 right-10 flex flex-col gap-1 px-5 ">
-        <p class="text-gray-900 font-semibold">DRINK SALE</p>
-        <h1 class="font-bold text-2xl w-full max-w-32">Water & Soft Drink</h1>
-        <button class="text-[#00B207] font-semibold bg-white py-1.5 px-4 mt-1 rounded-full flex items-center gap-2  justify-center cursor-pointer">Show Now <span> <img src="/code/image/fresh-desert/right-arrow.svg" alt="Right Arrow"/></span></button>
-      </div>
-      </div>
+          <div class="absolute top-14 flex flex-col gap-1 px-5">
+            <h1 class="w-full max-w-32 text-2xl font-medium text-white">100% Fresh Cow Milk</h1>
+            <p class="text-white">Starting at <span class="text-lg font-semibold">$14.99</span></p>
+            <button
+              class="mt-1 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-white py-1.5 font-semibold text-[#00B207]"
+            >
+              Show Now
+              <span> <img src="/code/image/fresh-desert/right-arrow.svg" alt="Right Arrow" /></span>
+            </button>
+          </div>
+        </div>
+        <!-- 2nd fresh and delicious image -->
+        <div class="relative">
+          <img src="/code/image/fresh-desert/cold_drinks.svg" alt="Fresh Milk" />
+          <div class="absolute right-10 top-14 flex flex-col gap-1 px-5">
+            <p class="font-semibold text-gray-900">DRINK SALE</p>
+            <h1 class="w-full max-w-32 text-2xl font-bold">Water & Soft Drink</h1>
+            <button
+              class="mt-1 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-4 py-1.5 font-semibold text-[#00B207]"
+            >
+              Show Now
+              <span> <img src="/code/image/fresh-desert/right-arrow.svg" alt="Right Arrow" /></span>
+            </button>
+          </div>
+        </div>
 
-      <!-- 3rd fresh and delicious image -->
-    <div class="relative">
-      <img src="/code/image/fresh-desert/badam.svg" alt="Fresh Milk" />
-      <div class="absolute top-14 left-4 flex flex-col gap-1 px-5 ">
-        <p class="text-gray-900 font-semibold">100% ORGANIC</p>
-        <h1 class="font-bold text-2xl w-full max-w-32">Water & Soft Drink</h1>
-        <button class="text-[#00B207] font-semibold bg-white py-1.5 px-4 mt-1 rounded-full flex items-center gap-2  justify-center cursor-pointer">Show Now <span> <img src="/code/image/fresh-desert/right-arrow.svg" alt="Right Arrow"/></span></button>
+        <!-- 3rd fresh and delicious image -->
+        <div class="relative">
+          <img src="/code/image/fresh-desert/badam.svg" alt="Fresh Milk" />
+          <div class="absolute left-4 top-14 flex flex-col gap-1 px-5">
+            <p class="font-semibold text-gray-900">100% ORGANIC</p>
+            <h1 class="w-full max-w-32 text-2xl font-bold">Water & Soft Drink</h1>
+            <button
+              class="mt-1 flex cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-4 py-1.5 font-semibold text-[#00B207]"
+            >
+              Show Now
+              <span> <img src="/code/image/fresh-desert/right-arrow.svg" alt="Right Arrow" /></span>
+            </button>
+          </div>
+        </div>
       </div>
-      </div>
-</div>
     </div>
 
-<!-- best Deals -->
-<div class="bg-gray-50 lg:mx-48  px-5">
-  <div class="grid 2xl:grid-cols-3  grid-cols-1 lg:gap-10 gap-5 items-center justify-items-center lg:px-0 px-4 pt-10">
+    <!-- best Deals -->
+    <div class="bg-gray-50 px-5 lg:mx-48">
+      <div
+        class="grid grid-cols-1 items-center justify-items-center gap-5 px-4 pt-10 lg:gap-10 lg:px-0 2xl:grid-cols-3"
+      >
+        <!-- Left Image -->
+        <div class="flex-shrink-0">
+          <img
+            class="w-full max-w-xs sm:max-w-lg"
+            src="/code/image/Deals/Items.svg"
+            alt="Best Deals"
+          />
+        </div>
 
-    <!-- Left Image -->
-    <div class=" flex-shrink-0 ">
-      <img class="w-full sm:max-w-lg max-w-xs" src="/code/image/Deals/Items.svg" alt="Best Deals"  />
-    </div>
-
-    <!-- Text Content -->
-    <div>
-      <p class="text-[#00B207] font-medium text-center">Best Deals</p>
-      <h1 class="text-[#002603] text-2xl lg:text-3xl font-semibold text-center w-full max-w-xs mx-auto">
-        Our Special Products Deal of the Month
-      </h1>
-
-      <div class="flex flex-wrap  items-center gap-4 mt-5">
-          <h1 class="bg-white text-[#00B207] text-2xl flex flex-col p-8 text-center">0 0
-            <span class="text-gray-500 font-semibold text-base">Days</span>
+        <!-- Text Content -->
+        <div>
+          <p class="text-center font-medium text-[#00B207]">Best Deals</p>
+          <h1
+            class="mx-auto w-full max-w-xs text-center text-2xl font-semibold text-[#002603] lg:text-3xl"
+          >
+            Our Special Products Deal of the Month
           </h1>
 
-          <h1 class="bg-white text-[#00B207] text-2xl flex flex-col p-8 text-center">0 2
-            <span class="text-gray-500 font-semibold text-base">Hours</span>
-          </h1>  
-          
-          <h1 class="bg-white text-[#00B207] text-2xl flex flex-col p-8 text-center">18
-            <span class="text-gray-500 font-semibold text-base">Minutes</span>
-          </h1>
+          <div class="mt-5 flex flex-wrap items-center gap-4">
+            <h1 class="flex flex-col bg-white p-8 text-center text-2xl text-[#00B207]">
+              0 0
+              <span class="text-base font-semibold text-gray-500">Days</span>
+            </h1>
 
-           
-          </h1>
+            <h1 class="flex flex-col bg-white p-8 text-center text-2xl text-[#00B207]">
+              0 2
+              <span class="text-base font-semibold text-gray-500">Hours</span>
+            </h1>
+
+            <h1 class="flex flex-col bg-white p-8 text-center text-2xl text-[#00B207]">
+              18
+              <span class="text-base font-semibold text-gray-500">Minutes</span>
+            </h1>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="hidden flex-shrink-0 2xl:block">
+          <img
+            class="w-full max-w-xs sm:max-w-lg"
+            src="/code/image/Deals/Men.svg"
+            alt="Best Deals"
+          />
+        </div>
       </div>
     </div>
 
-    <!-- Right Image -->
-    <div class=" flex-shrink-0 2xl:block hidden">
-      <img class="w-full sm:max-w-lg max-w-xs" src="/code/image/Deals/Men.svg" alt="Best Deals"  />
+    <!-- Statistics -->
+
+    <div class="mt-10 lg:mx-48">
+      <div>
+        <div class="relative">
+          <img
+            src="/code/image/statistics/BG.svg"
+            alt="Statistics Background"
+            class="h-max w-full"
+          />
+
+          <!-- Center container -->
+          <div class="absolute inset-0 mx-10 flex items-center justify-center gap-5">
+            <div class="stat-card rounded-lg bg-gray-800 p-6 text-center shadow-lg">
+              <h1 class="text-3xl font-bold text-[#00B207]">10+</h1>
+              <p class="text-white">Years of Hard Work</p>
+            </div>
+
+            <div class="stat-card rounded-lg bg-gray-800 p-6 text-center shadow-lg">
+              <h1 class="text-3xl font-bold text-[#00B207]">500k+</h1>
+              <p class="text-white">Happy Customers</p>
+            </div>
+
+            <div class="stat-card rounded-lg bg-gray-800 p-6 text-center shadow-lg">
+              <h1 class="text-3xl font-bold text-[#00B207]">28</h1>
+              <p class="text-white">Qualified Team Member</p>
+            </div>
+
+            <div class="stat-card rounded-lg bg-gray-800 p-6 text-center shadow-lg">
+              <h1 class="text-3xl font-bold text-[#00B207]">750k+</h1>
+              <p class="text-white">Monthly Orders</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
-</div>
+    <!-- Featured Products -->
 
+    <div class="mt-10">
+      <h1 class="text-center text-3xl font-bold text-gray-900">Featured Products</h1>
+      <div class="mx-48 mt-10 flex justify-between">
+        <div>
+          <div
+            class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Apple.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Green Apple</p>
+                <p class="flex gap-2 font-semibold">
+                  $14.99 <span class="text-gray-400 line-through">$20.30</span>
+                </p>
+              </div>
 
-<!-- Statistics -->
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
 
-<div class="mt-10 lg:mx-48">
-  <div>
-<div class="relative">
-  <img src="/code/image/statistics/BG.svg" alt="Statistics Background" class="w-full h-max" />
+        <div>
+          <div
+            class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Cabbage.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Cabbage</p>
+                <p class="flex gap-2 font-semibold">
+                  $24.99 <span class="text-gray-400 line-through">$20.30</span>
+                </p>
+              </div>
 
-  <!-- Center container -->
-  <div class="absolute inset-0  flex justify-center items-center mx-10 gap-5 ">
-    <div class="stat-card bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-      <h1 class="text-[#00B207] text-3xl font-bold">10+</h1>
-      <p class="text-white">Years of Hard Work</p>
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Eggplant.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Eggplant</p>
+                <p class="flex gap-2 font-semibold">
+                  $18.99 <span class="text-gray-400 line-through">$20.30</span>
+                </p>
+              </div>
+
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Green lettuce.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Green letture</p>
+                <p class="flex gap-2 font-semibold">
+                  $14.99 <span class="text-gray-400 line-through">$16.30</span>
+                </p>
+              </div>
+
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="group w-max cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Malta.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Malta</p>
+                <p class="flex gap-2 font-semibold">
+                  $10.99 <span class="text-gray-400 line-through">$14.30</span>
+                </p>
+              </div>
+
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-        <div class="stat-card bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-      <h1 class="text-[#00B207] text-3xl font-bold">500k+</h1>
-      <p class="text-white">Happy Customers</p>
-    </div>
-
-        <div class="stat-card bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-      <h1 class="text-[#00B207] text-3xl font-bold">28</h1>
-      <p class="text-white">Qualified Team Member</p>
-    </div>
-
-        <div class="stat-card bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-      <h1 class="text-[#00B207] text-3xl font-bold">750k+</h1>
-      <p class="text-white">Monthly Orders</p>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-
-<!-- Latest News -->
-
-
-<div>
-  <div>
-    <h1 class="text-gray-900 font-semibold">Latest News</h1>
-  </div>
-</div>
-
-
   </body>
 </html>
