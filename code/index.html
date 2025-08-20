@@ -542,7 +542,7 @@
 
         <!-- Fruits Category -->
         <div class="content fruits">
-          <div class="mt-20 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 px-5">
+          <div class="mt-20 grid grid-cols-1 gap-4 px-5 md:grid-cols-2 xl:grid-cols-4">
             <!-- 1st Part -->
             <div
               class="group m-auto w-full cursor-pointer rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px] md:w-max"
@@ -754,137 +754,138 @@
     </div>
 
     <!-- Featured Products -->
+    <div>
+      <h1 class="mt-10 text-center text-3xl font-bold text-gray-900">Featured Products</h1>
 
-    <h1 class="mt-10 text-center text-3xl font-bold text-gray-900">Featured Products</h1>
+      <!-- For Mobile -->
 
-    <!-- For Mobile -->
+      <input type="radio" name="products-slider" id="products-1" checked class="hidden" />
+      <input type="radio" name="products-slider" id="products-2" class="hidden" />
+      <input type="radio" name="products-slider" id="products-3" class="hidden" />
+      <input type="radio" name="products-slider" id="products-4" class="hidden" />
+      <input type="radio" name="products-slider" id="products-5" class="hidden" />
 
-    <input type="radio" name="slider" id="products-1" checked class="hidden" />
-    <input type="radio" name="slider" id="products-2" class="hidden" />
-    <input type="radio" name="slider" id="products-3" class="hidden" />
-    <input type="radio" name="slider" id="products-4" class="hidden" />
-    <input type="radio" name="slider" id="products-5" class="hidden" />
+      <div
+        class="xs:mx-24 mx-16 mt-10 flex flex-col flex-wrap justify-between gap-5 sm:mx-48 lg:flex-row"
+      >
+        <div class="slider-1 slides">
+          <div
+            class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Apple.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Green Apple</p>
+                <p class="flex gap-2 font-semibold">
+                  $14.99 <span class="text-gray-400 line-through">$20.30</span>
+                </p>
+              </div>
 
-    <div
-      class="xs:mx-24 mx-16 mt-10 flex flex-col flex-wrap justify-between gap-5 sm:mx-48 lg:flex-row"
-    >
-      <div class="slider-1 slides">
-        <div
-          class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
-        >
-          <img class="m-auto" src="/code/image/featured/Apple.svg" alt="/" />
-          <div class="flex items-center justify-between px-4 pb-5">
-            <div>
-              <p class="font-medium text-gray-400">Green Apple</p>
-              <p class="flex gap-2 font-semibold">
-                $14.99 <span class="text-gray-400 line-through">$20.30</span>
-              </p>
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div
-              class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
-            >
-              <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+        <div class="slider-2 slides">
+          <div
+            class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Cabbage.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Cabbage</p>
+                <p class="flex gap-2 font-semibold">
+                  $24.99 <span class="text-gray-400 line-through">$20.30</span>
+                </p>
+              </div>
+
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-3 slides">
+          <div
+            class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Eggplant.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Eggplant</p>
+                <p class="flex gap-2 font-semibold">
+                  $18.99 <span class="text-gray-400 line-through">$20.30</span>
+                </p>
+              </div>
+
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-4 slides">
+          <div
+            class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Green lettuce.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Green letture</p>
+                <p class="flex gap-2 font-semibold">
+                  $14.99 <span class="text-gray-400 line-through">$16.30</span>
+                </p>
+              </div>
+
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-5 slides">
+          <div
+            class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
+          >
+            <img class="m-auto" src="/code/image/featured/Malta.svg" alt="/" />
+            <div class="flex items-center justify-between px-4 pb-5">
+              <div>
+                <p class="font-medium text-gray-400">Malta</p>
+                <p class="flex gap-2 font-semibold">
+                  $10.99 <span class="text-gray-400 line-through">$14.30</span>
+                </p>
+              </div>
+
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
+              >
+                <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="slider-2 slides">
-        <div
-          class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
-        >
-          <img class="m-auto" src="/code/image/featured/Cabbage.svg" alt="/" />
-          <div class="flex items-center justify-between px-4 pb-5">
-            <div>
-              <p class="font-medium text-gray-400">Cabbage</p>
-              <p class="flex gap-2 font-semibold">
-                $24.99 <span class="text-gray-400 line-through">$20.30</span>
-              </p>
-            </div>
-
-            <div
-              class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
-            >
-              <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-            </div>
-          </div>
-        </div>
+      <!-- Slider Controls -->
+      <div class="slider-controls mt-5 flex justify-center gap-3 pb-5">
+        <label for="products-1"></label>
+        <label for="products-2"></label>
+        <label for="products-3"></label>
+        <label for="products-4"></label>
+        <label for="products-5"></label>
       </div>
-
-      <div class="slider-3 slides">
-        <div
-          class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
-        >
-          <img class="m-auto" src="/code/image/featured/Eggplant.svg" alt="/" />
-          <div class="flex items-center justify-between px-4 pb-5">
-            <div>
-              <p class="font-medium text-gray-400">Eggplant</p>
-              <p class="flex gap-2 font-semibold">
-                $18.99 <span class="text-gray-400 line-through">$20.30</span>
-              </p>
-            </div>
-
-            <div
-              class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
-            >
-              <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-4 slides">
-        <div
-          class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
-        >
-          <img class="m-auto" src="/code/image/featured/Green lettuce.svg" alt="/" />
-          <div class="flex items-center justify-between px-4 pb-5">
-            <div>
-              <p class="font-medium text-gray-400">Green letture</p>
-              <p class="flex gap-2 font-semibold">
-                $14.99 <span class="text-gray-400 line-through">$16.30</span>
-              </p>
-            </div>
-
-            <div
-              class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
-            >
-              <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-5 slides">
-        <div
-          class="xs:w-max group w-full cursor-pointer overflow-hidden rounded-lg border-[#00B207] bg-white shadow-lg transition-all duration-300 ease-in-out hover:border-[1px]"
-        >
-          <img class="m-auto" src="/code/image/featured/Malta.svg" alt="/" />
-          <div class="flex items-center justify-between px-4 pb-5">
-            <div>
-              <p class="font-medium text-gray-400">Malta</p>
-              <p class="flex gap-2 font-semibold">
-                $10.99 <span class="text-gray-400 line-through">$14.30</span>
-              </p>
-            </div>
-
-            <div
-              class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-300 p-2 transition-all duration-300 ease-in-out group-hover:bg-[#00B207]"
-            >
-              <img src="/code/image/navigation/Bag.svg" alt="Shopping Bag" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Slider Controls -->
-    <div class="slider-controls mt-5 flex justify-center gap-3 pb-5">
-      <label for="products-1"></label>
-      <label for="products-2"></label>
-      <label for="products-3"></label>
-      <label for="products-4"></label>
-      <label for="products-5"></label>
     </div>
 
     <!-- Deals , Seller and  Top Rated-->
@@ -1073,9 +1074,9 @@
       <div>
         <h1 class="py-10 text-center text-3xl font-bold text-gray-900">What our Clients Says</h1>
 
-        <input type="radio" name="slider" id="clients-1" checked class="hidden" />
-        <input type="radio" name="slider" id="clients-2" class="hidden" />
-        <input type="radio" name="slider" id="clients-3" class="hidden" />
+        <input type="radio" name="client-slider" id="clients-1" checked class="hidden" />
+        <input type="radio" name="client-slider" id="clients-2" class="hidden" />
+        <input type="radio" name="client-slider" id="clients-3" class="hidden" />
 
         <div class="grid grid-cols-1 gap-5 px-10 md:grid-cols-3">
           <!-- 1st Client -->
