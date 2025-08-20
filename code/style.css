@@ -61,6 +61,12 @@ html {
   display: none;
 }
 
+/* Client slider */
+
+.client-slider-control label {
+  display: none;
+}
+
 @media screen and (max-width: 640px) {
   .threeBar span {
     height: 3px;
@@ -138,6 +144,32 @@ html {
   #products-3:checked ~ .slider-controls label[for='products-3'],
   #products-4:checked ~ .slider-controls label[for='products-4'],
   #products-5:checked ~ .slider-controls label[for='products-5'] {
+    background-color: #00b207;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .client-slider-control label {
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .clients {
+    display: none;
+  }
+
+  #clients-1:checked ~ div .client-slider-1,
+  #clients-2:checked ~ div .client-slider-2,
+  #clients-3:checked ~ div .client-slider-3 {
+    display: block;
+  }
+
+  #clients-1:checked ~ .client-slider-control label[for='clients-1'],
+  #clients-2:checked ~ .client-slider-control label[for='clients-2'],
+  #clients-3:checked ~ .client-slider-control label[for='clients-3'] {
     background-color: #00b207;
   }
 }

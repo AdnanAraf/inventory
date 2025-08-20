@@ -1073,10 +1073,14 @@
       <div>
         <h1 class="py-10 text-center text-3xl font-bold text-gray-900">What our Clients Says</h1>
 
+        <input type="radio" name="slider" id="clients-1" checked class="hidden" />
+        <input type="radio" name="slider" id="clients-2" class="hidden" />
+        <input type="radio" name="slider" id="clients-3" class="hidden" />
+
         <div class="grid grid-cols-1 gap-5 px-10 md:grid-cols-3">
           <!-- 1st Client -->
           <div
-            class="flex cursor-pointer flex-col gap-2 rounded-lg bg-white p-5 duration-300 hover:-translate-y-2"
+            class="clients client-slider-1 cursor-pointer flex-col gap-2 rounded-lg bg-white p-5 duration-300 hover:-translate-y-2"
           >
             <img class="m-auto" src="/code/image/Clients/clients.svg" alt="" />
             <p class="text-medium text-center text-base font-medium text-[#002603]">Jenny Wilson</p>
@@ -1089,7 +1093,7 @@
           </div>
           <!-- 2nd Client -->
           <div
-            class="flex cursor-pointer flex-col gap-2 rounded-lg bg-white p-5 duration-300 hover:-translate-y-2"
+            class="clients client-slider-2 flex cursor-pointer flex-col gap-2 rounded-lg bg-white p-5 duration-300 hover:-translate-y-2"
           >
             <img class="m-auto" src="/code/image/Clients/clients2.svg" alt="" />
             <p class="text-medium text-center text-base font-medium text-[#002603]">Guy Hawkins</p>
@@ -1104,7 +1108,7 @@
           <!-- 3rd Client -->
 
           <div
-            class="flex cursor-pointer flex-col gap-2 rounded-lg bg-white p-5 duration-300 hover:-translate-y-2"
+            class="clients client-slider-3 flex cursor-pointer flex-col gap-2 rounded-lg bg-white p-5 duration-300 hover:-translate-y-2"
           >
             <img class="m-auto" src="/code/image/Clients/clients(3).svg" alt="" />
             <p class="text-medium text-center text-base font-medium text-[#002603]">
@@ -1117,6 +1121,12 @@
               sed lorem pulvina”
             </h1>
           </div>
+        </div>
+        <!-- Client Slider Control -->
+        <div class="client-slider-control mt-3 flex justify-center gap-3">
+          <label for="clients-1"></label>
+          <label for="clients-2"></label>
+          <label for="clients-3"></label>
         </div>
       </div>
     </div>
