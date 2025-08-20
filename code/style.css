@@ -11,6 +11,7 @@ html {
 .content {
   display: none;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 #vegetable:checked ~ .contents .vegetables,
